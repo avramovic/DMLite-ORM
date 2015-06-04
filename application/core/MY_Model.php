@@ -768,6 +768,27 @@ class MY_Model extends CI_Model implements Iterator {
 		return $this;
 	}
 
+	/* update set */
+	public function update($col, $val=false)
+	{
+
+		$data = array();
+		if (is_array($col))
+		{
+			foreach ($col as $column=>$datum)
+				$data[$column] = $datum;
+
+			$this->_db->update($this->_table(true), $data);
+		}
+		else
+		{
+			$data[$col] = $val;
+			$this->_db->update($this->_table(true), $data);
+		}
+
+		return $this;
+	}
+
 	/* get all values of a single column as a php array */
 
 	public function get_column_values($col)
