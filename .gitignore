@@ -2,3 +2,6 @@ system/
 application/libraries/
 application/language/
 application/views/
+application/config/
+index.html
+index.php
