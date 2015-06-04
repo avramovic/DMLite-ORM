@@ -1,4 +1,4 @@
-<?php
+<?php if ( !defined( 'BASEPATH' ) ) exit( 'No direct script access allowed' );
 
 class Book extends MY_Model {
 

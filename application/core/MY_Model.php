@@ -36,6 +36,7 @@ class MY_Model extends CI_Model implements Iterator {
 	public $primary_key = 'id';
 
 	/* constructor */
+
 	public function __construct($ignore_cache = false)
 	{
 		parent::__construct();
@@ -735,12 +736,18 @@ class MY_Model extends CI_Model implements Iterator {
 			if ($this->exists())
 			{
 				$this->_db->where('id', $this->stored->id)->delete($this->_table(true));
+				$this->stored = $this->_data = new stdClass;
+				$this->all = array();
+				$this->_updated = array();
+
 			}
 			else
 			{
 				$this->_db->delete($this->_table(true));
 			}
 		}
+
+		return $this;
 	}
 
 	/* delete whole set */
@@ -750,10 +757,15 @@ class MY_Model extends CI_Model implements Iterator {
 		if ($this->exists())
 		{
 			$ids = $this->get_column_values('id');
-			return $this->_db->where_in('id', $ids)->delete($this->_table(true));
+			$this->_db->where_in('id', $ids)->delete($this->_table(true));
+			$this->stored = $this->_data = new stdClass;
+			$this->all = array();
+			$this->_updated = array();
 		}
 		else
-			return $this->_db->delete($this->_table(true));
+			$this->_db->delete($this->_table(true));
+
+		return $this;
 	}
 
 	/* get all values of a single column as a php array */
