@@ -1,4 +1,5 @@
 # DMLite-ORM
+
 DataMapper-like ORM for CodeIgniter 3
 
 This project is an attempt of making an ORM similar to DataMapper ORM which previously could be downloaded from <http://datamapper.wanwizard.eu>
@@ -38,6 +39,7 @@ $book->save(array($author));
 For more examples check out the Wiki!
 
 ## What's done?
+
 * fetching results with *where*, *or_where*, *where_in*, *or_where_in*, *where_not_in* and *or_where_not_in*
 * fetching results with *where_related*, *or_where_related*, *where_in_related*, *or_where_in_related*, *where_not_in_related* and *or_where_not_in_related*
 * standard [CI3 Query Builder](http://www.codeigniter.com/userguide3/database/query_builder.html) functions
@@ -48,8 +50,10 @@ For more examples check out the Wiki!
 * fetching with deep relationships
 
 ## What's yet to be done?
+
 * saving join fields in many-to-many relationships
 * querying by join fields
 * including join fields into resultset
+* `get_paged` to simply paginate over a result set
 
 If you have idea please submit it as an issue. Pull requests are welcome.
