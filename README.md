@@ -10,7 +10,7 @@ DMLite ORM is not, and probably will never be as flexible or as smart as DataMap
 
 ## How to set it up?
 
-Simply, download *MY_Model.php* from *application/core/* folder and place it in your project. That's the only file you  need. Find out more in this project's Wiki.
+Simply, download `MY_Model.php` from `application/core/` folder and place it in your project. That's the only file you  need. Find out more in this project's [Wiki](https://github.com/avramovic/DMLite-ORM/wiki).
 
 ## Show me example!
 
@@ -36,7 +36,7 @@ $book->save(array($author));
 ?>
 ```
 
-For more examples check out the Wiki!
+For more examples check out the [Wiki](https://github.com/avramovic/DMLite-ORM/wiki)!
 
 ## What's done?
 
