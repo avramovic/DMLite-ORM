@@ -40,8 +40,8 @@ For more examples check out the Wiki!
 
 ## What's done?
 
-* fetching results with *where*, *or_where*, *where_in*, *or_where_in*, *where_not_in* and *or_where_not_in*
-* fetching results with *where_related*, *or_where_related*, *where_in_related*, *or_where_in_related*, *where_not_in_related* and *or_where_not_in_related*
+* fetching results with `where`, `or_where`, `where_in`, `or_where_in`, `where_not_in` and `or_where_not_in`
+* fetching results with `where_related`, `or_where_related`, `where_in_related`, `or_where_in_related`, `where_not_in_related` and `or_where_not_in_related`
 * standard [CI3 Query Builder](http://www.codeigniter.com/userguide3/database/query_builder.html) functions
 * one-to-many and many-to-many relationships
 * saving with relationships
