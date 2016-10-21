@@ -1,5 +1,7 @@
 # DMLite-ORM
 
+> Since I've switched to [Laravel](https://laravel.com/) at my job, I won't have time to maintain this project; at least not in the near future. Feel free to fork it! Or even better, [use Laravel's Eloquent ORM](https://vkbansal.me/blog/using-eloquent-outside-laravel/) in CI3 (you can load it easily if using [composer-enabled CI3](http://forum.codeigniter.com/thread-64487.html)).
+
 DataMapper-like ORM for CodeIgniter 3
 
 This project is an attempt of making an ORM similar to DataMapper ORM which previously could be downloaded from <http://datamapper.wanwizard.eu>
